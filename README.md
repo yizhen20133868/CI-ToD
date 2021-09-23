@@ -4,7 +4,7 @@
 
 This repository contains the PyTorch implementation and the data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**. **Libo Qin, Tianbao Xie, Shijue Huang, Qiguang Chen, Xiao Xu, Wanxiang Che**.  ***EMNLP2021***.[[PDF]](https://arxiv.org/abs/xxxxx) .
 
-<img align="right" src="img/SCIR_logo.png" width="25%">
+<img align="right" src="img/SCIR_logo.png" width="30%">
 
 This code has been written using PyTorch >= 1.1. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
