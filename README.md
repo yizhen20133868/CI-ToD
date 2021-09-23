@@ -178,7 +178,7 @@ conda env create -f py3.6pytorch1.1_.yaml
 
 ## How to run it
 
-The script **train.py** acts as a main function to the project, you can run the experiments by the following commands.
+The script **train.py** acts as a main function to the project, you can run the experiments by the following commands:
 
 ```
 python -u train.py --cfg KBRetriver_DC/KBRetriver_DC_BERT.cfg
@@ -186,7 +186,7 @@ python -u train.py --cfg KBRetriver_DC/KBRetriver_DC_BERT.cfg
 
 The parameters we use are configured in the `configure`. If you need to adjust them, you can modify them in the relevant files or append parameters to the command.
 
-Finally, you can check the results in `logs` folder.Also,  you can run fitlog command to visualize the results.
+Finally, you can check the results in `logs` folder.Also,  you can run fitlog command to visualize the results:
 
 ```
 fitlog log logs/
