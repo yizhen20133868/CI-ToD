@@ -1,8 +1,12 @@
 # Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System
 
-<img align="right" src="img/SCIR_logo.png" width="30%">
+<img src="img/pytorch.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-This repository contains the PyTorch code and data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**.  ***EMNLP2021***. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
+This repository contains the PyTorch implementation and the data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**. **Libo Qin, Tianbao Xie, Shijue Huang, Qiguang Chen, Xiao Xu, Wanxiang Che**.  ***EMNLP2021***.[[PDF]](https://arxiv.org/abs/xxxxx) .
+
+<img align="right" src="img/SCIR_logo.png" width="25%">
+
+This code has been written using PyTorch >= 1.1. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
 <pre>
 @article{qin2021CIToD,
@@ -13,12 +17,11 @@ This repository contains the PyTorch code and data of the paper: **Don’t be Co
 }
 </pre>
 
-## Abstract 
+## Abstract
 
-Consistency Identification has obtained remarkable success on open-domain dialogue, which can be used for preventing inconsistent response generation. However, in contrast to the rapid development in open-domain dialogue, few efforts have been made to the task-oriented dialogue direction. In this paper, we argue that *consistency problem* is more urgent in task-oriented domain. To facilitate the research, we introduce CI-ToD, a novel dataset for **Consistency Identification in Task-oriented Dialog system**. In addition, we not only annotate the single label to enable the  model to judge whether the system response  is contradictory, but also provide **more finegrained labels** (i.e., **Dialogue History Inconsistency(HI), User Query Inconsistency(QI) and Knowledge Base Inconsistency(KBI)**) to encourage model to know what inconsistent sources lead to it. Empirical results show that state-of-the-art methods only achieve performance of 51.3%, which is far behind the human performance of 93.2%, indicating that **there is ample room for improving consistency identification ability**. Finally,  we conduct exhaustive experiments and qualitative analysis to comprehend key challenges and provide guidance for future directions.
+Consistency Identification has obtained remarkable success on open-domain dialogue, which can be used for preventing inconsistent response generation. However, in contrast to the rapid development in open-domain dialogue, few efforts have been made to the task-oriented dialogue direction. In this paper, we argue that *consistency problem* is more urgent in task-oriented domain. To facilitate the research, we introduce CI-ToD, a novel dataset for **Consistency Identification in Task-oriented Dialog system**. In addition, we not only annotate the single label to enable the  model to judge whether the system response  is contradictory, but also provide **more finegrained labels** (i.e., **Dialogue History Inconsistency(HI), User Query Inconsistency(QI) and Knowledge Base Inconsistency(KBI)**, which are as shown in the figure below) to encourage model to know what inconsistent sources lead to it. Empirical results show that state-of-the-art methods only achieve performance of 51.3%, which is far behind the human performance of 93.2%, indicating that **there is ample room for improving consistency identification ability**. Finally,  we conduct exhaustive experiments and qualitative analysis to comprehend key challenges and provide guidance for future directions.
 
-
-If you find this code useful, consider kindly citing our work.
+<img align="center" src="img/triple_inconsistency.png" width="80%">
 
 
 ##  Dataset
@@ -145,6 +148,11 @@ The basic format of the dataset is as follows, including multiple rounds of dial
         <td>106</td>
 	</tr>
 </table>
+## Model
+
+<img align="center" src="img/model.png" width="100%">
+
+Here is the model structure of non pre-trained model (a) and pre-trained model (b and c). 
 
 ## Preparation
 
@@ -181,8 +189,6 @@ Finally, you can check the results in `logs` folder.Also,  you can run fitlog co
 ```
 fitlog log logs/
 ```
-
-
 
 ## Baseline Experiment Result
 
