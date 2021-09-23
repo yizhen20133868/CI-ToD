@@ -1,21 +1,24 @@
 # Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System
 
-This repo contains the code for the paper： 
+This repository contains the PyTorch code and data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented**.  ***EMNLP2021***. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
-Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented
+<img align="right" src="img/SCIR_logo.png" width="30%">
 
-EMNLP2021
+<pre>
+@article{qin2021CIToD,
+  title={Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented},
+  author={Qin, Libo and Xie, Tianbao and Huang, Shijue and Chen, Qiguang and Xu, Xiao and Che, Wanxiang},
+  journal={arXiv preprint arXiv:xxxx},
+  year={2021}
+}
+</pre>
 
 ## Abstract 
 
 Consistency Identification has obtained remarkable success on open-domain dialogue, which can be used for preventing inconsistent response generation. However, in contrast to the rapid development in open-domain dialogue, few efforts have been made to the task-oriented dialogue direction. In this paper, we argue that *consistency problem* is more urgent in task-oriented domain. To facilitate the research, we introduce CI-ToD, a novel dataset for **Consistency Identification in Task-oriented Dialog system**. In addition, we not only annotate the single label to enable the  model to judge whether the system response  is contradictory, but also provide **more finegrained labels** (i.e., **Dialogue History Inconsistency(HI), User Query Inconsistency(QI) and Knowledge Base Inconsistency(KBI)**) to encourage model to know what inconsistent sources lead to it. Empirical results show that state-of-the-art methods only achieve performance of 51.3%, which is far behind the human performance of 93.2%, indicating that **there is ample room for improving consistency identification ability**. Finally,  we conduct exhaustive experiments and qualitative analysis to comprehend key challenges and provide guidance for future directions.
 
 
-If you find this code useful, consider kindly citing our work:
-
-```
-    xxxx
-```
+If you find this code useful, consider kindly citing our work.
 
 
 ##  Dataset
@@ -183,7 +186,7 @@ fitlog log logs/
 
 ## Baseline Experiment Result
 
-All experiments were performed in TITAN_XP except for BART, which was performed on Tesla V100 PCIE 32 GB.
+All experiments were performed in TITAN_XP except for BART, which was performed on Tesla V100 PCIE 32 GB. These may not be the best results. Therefore, the parameters can be adjusted to obtain better results.
 
 ### KBRetriever_DC
 
@@ -352,6 +355,4 @@ Thanks for supports and guidance from our adviser [Wanxiang Che](http://ir.hit.e
 ## Contact us
 
 - Just feel free to open issues or send us email([me](mailto:lbqin@ir.hit.edu.cn), [Tianbao](mailto:tianbaoxie@ir.hit.edu.cn)) if you have any problems or find some mistakes in this dataset.
-
-## Citations
 
