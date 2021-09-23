@@ -1,13 +1,8 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# author： Timothy_xie
-# datetime： 2021/4/6 0:34 
-# ide： PyCharm
-
 import logging
 import pprint
 import random
 
+import fitlog
 import numpy as np
 import torch
 import torch.nn as nn
@@ -16,7 +11,7 @@ from transformers import XLNetTokenizer, XLNetModel, AdamW
 
 import models.KBRetriever_DC.base
 import utils.tool
-import fitlog
+
 
 class BERTTool(object):
     def init(args):
@@ -37,7 +32,6 @@ class BERTTool(object):
         # SYS: start of system turn
 
 
-
 class Model(models.KBRetriever_DC.base.Model):
     def __init__(self, args, DatasetTool, EvaluateTool, inputs):
         np.random.seed(args.train.seed)
@@ -49,7 +43,7 @@ class Model(models.KBRetriever_DC.base.Model):
         self.bert = BERTTool.bert
         self.tokenizer = BERTTool.tokenizer
 
-        special_tokens_dict = {'additional_special_tokens': BERTTool.special_tokens+entities}
+        special_tokens_dict = {'additional_special_tokens': BERTTool.special_tokens + entities}
         self.tokenizer.add_special_tokens(special_tokens_dict)
         self.bert.resize_token_embeddings(len(self.tokenizer))
 
@@ -100,7 +94,8 @@ class Model(models.KBRetriever_DC.base.Model):
     def get_info(self, batch):
         construced_infos = [item['constructed_info'] for item in batch]
         last_responses = [item['last_response'] for item in batch]
-        tokenized = self.tokenizer(text = construced_infos, text_pair = last_responses, truncation='only_first', padding=True,
+        tokenized = self.tokenizer(text=construced_infos, text_pair=last_responses, truncation='only_first',
+                                   padding=True,
                                    return_tensors='pt', max_length=512, return_token_type_ids=True)
         tokenized = tokenized.data
         return tokenized['input_ids'].to(self.device), tokenized['token_type_ids'].to(self.device), tokenized[
@@ -108,7 +103,7 @@ class Model(models.KBRetriever_DC.base.Model):
 
     def forward(self, batch):
         token_ids, type_ids, mask_ids = self.get_info(batch)
-        utt = self.bert(input_ids = token_ids, token_type_ids = type_ids, attention_mask = mask_ids)[0][:, -1, :].squeeze(1)
+        utt = self.bert(input_ids=token_ids, token_type_ids=type_ids, attention_mask=mask_ids)[0][:, -1, :].squeeze(1)
         out_qi = self.w_qi(utt)
         out_hi = self.w_hi(utt)
         out_kbi = self.w_kbi(utt)
