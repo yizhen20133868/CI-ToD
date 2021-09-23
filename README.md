@@ -2,11 +2,11 @@
 
 <img align="right" src="img/SCIR_logo.png" width="30%">
 
-This repository contains the PyTorch code and data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented**.  ***EMNLP2021***. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
+This repository contains the PyTorch code and data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**.  ***EMNLP2021***. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
 <pre>
 @article{qin2021CIToD,
-  title={Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented},
+  title={Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System},
   author={Qin, Libo and Xie, Tianbao and Huang, Shijue and Chen, Qiguang and Xu, Xiao and Che, Wanxiang},
   journal={arXiv preprint arXiv:xxxx},
   year={2021}
