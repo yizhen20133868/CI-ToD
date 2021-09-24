@@ -12,10 +12,11 @@ This code has been written using PyTorch >= 1.1. If you use any source codes or 
 @article{qin2021CIToD,
   title={Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System},
   author={Qin, Libo and Xie, Tianbao and Huang, Shijue and Chen, Qiguang and Xu, Xiao and Che, Wanxiang},
-  journal={arXiv preprint arXiv:xxxx},
+  journal={arXiv preprint arXiv:2109.11292},
   year={2021}
 }
 </pre>
+
 
 ## Abstract
 
