@@ -2,7 +2,7 @@
 
 <img src="img/pytorch.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-This repository contains the PyTorch implementation and the data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**. **[Libo Qin](https://scholar.google.com/citations?user=8lVpK1QAAAAJ)**, [Tianbao Xie](https://scholar.google.com/citations?user=8sdGK_0AAAAJ), [Shijue Huang](https://github.com/JoeYing1019), [Qiguang Chen](https://github.com/LightChen233), [Xiao Xu](https://scholar.google.com/citations?user=lgVN8tcAAAAJ), [Wanxiang Che](https://scholar.google.com/citations?user=SVlQ6IEAAAAJ).  ***EMNLP2021***.[[PDF]](https://arxiv.org/abs/xxxxx) .
+This repository contains the PyTorch implementation and the data of the paper: **Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System**. **[Libo Qin](https://scholar.google.com/citations?user=8lVpK1QAAAAJ)**, [Tianbao Xie](https://scholar.google.com/citations?user=8sdGK_0AAAAJ), [Shijue Huang](https://github.com/JoeYing1019), [Qiguang Chen](https://github.com/LightChen233), [Xiao Xu](https://scholar.google.com/citations?user=lgVN8tcAAAAJ), [Wanxiang Che](https://scholar.google.com/citations?user=SVlQ6IEAAAAJ).  ***EMNLP2021***.[[PDF]](https://arxiv.org/pdf/2109.11292.pdf) .
 
 <img align="right" src="img/SCIR_logo.png" width="30%">
 
