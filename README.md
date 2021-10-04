@@ -9,11 +9,13 @@ This repository contains the PyTorch implementation and the data of the paper: *
 This code has been written using PyTorch >= 1.1. If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
 <pre>
-@article{qin2021CIToD,
-  title={Don’t be Contradicted with Anything!CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System},
-  author={Qin, Libo and Xie, Tianbao and Huang, Shijue and Chen, Qiguang and Xu, Xiao and Che, Wanxiang},
-  journal={arXiv preprint arXiv:2109.11292},
-  year={2021}
+@misc{qin2021dont,
+      title={Don't be Contradicted with Anything! CI-ToD: Towards Benchmarking Consistency for Task-oriented Dialogue System}, 
+      author={Libo Qin and Tianbao Xie and Shijue Huang and Qiguang Chen and Xiao Xu and Wanxiang Che},
+      year={2021},
+      eprint={2109.11292},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 </pre>
 
